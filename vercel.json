@@ -10,6 +10,9 @@
       }
     }
   ],
+  "outputDirectory": "build",
+  "installCommand": "npm install",
+  "framework": "create-react-app",
   "routes": [
     {
       "src": "src/App.js",
@@ -18,10 +21,6 @@
     {
       "src": "src/pages",
       "dest": "/solutions"
-    },
-    {
-      "src": "build/static",
-      "dest": "/static"
     },
     {
       "src": "/src/assets",
