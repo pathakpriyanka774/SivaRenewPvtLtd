@@ -19,6 +19,10 @@
       "dest": "/solutions"
     },
     {
+      "src": "build/static",
+      "dest": "/static"
+    },
+    {
       "src": "/src/assets",
       "dest": "/assets"
     }
