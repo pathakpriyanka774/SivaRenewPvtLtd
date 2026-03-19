@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "vercel-build": "react-scripts build"
+    "vercel-build": "mkdir -p build && npm run build",
+    "prebuild": "mkdir -p build"
   },
   "eslintConfig": {
     "extends": [
