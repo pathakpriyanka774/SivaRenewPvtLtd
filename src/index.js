@@ -9,3 +9,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+
+
+//I am deploying it on vercel
