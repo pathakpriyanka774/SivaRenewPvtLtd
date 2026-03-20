@@ -36,11 +36,52 @@
   font-size: 56px;
   font-weight: 900;
   color: #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   letter-spacing: -0.5px;
   animation: fadeInUp 1s ease-out;
+}
+
+.hero-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.3px;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.hero-metric {
+  font-size: 48px;
+  font-weight: 900;
+  color: #F5B400;
+  margin-bottom: 30px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+.hero-cta {
+  padding: 16px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background: linear-gradient(135deg, #F5B400, #d89c00);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(245, 180, 0, 0.3);
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  animation: fadeInUp 1.6s ease-out;
+}
+
+.hero-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(245, 180, 0, 0.4);
 }
 
 .hero-content p {

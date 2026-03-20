@@ -4,7 +4,8 @@ import residential from "../assets/images/Residential.png";
 import commercial from "../assets/images/gujrat.png";
 import industrial from "../assets/images/industrialGujrat.png";
 import jaipur from "../assets/images/jaipur.png";
-
+import gallery1 from "../assets/images/gallery1.png";
+import gallery2 from "../assets/images/gallery2.jpg";
 function Contact(){
   const [formData, setFormData] = useState({
     name: '',
@@ -67,11 +68,12 @@ return(
       
       <div className="image-collage">
         <div className="collage-item">
-          <img 
-            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=300&h=200&fit=crop" 
-            alt="Solar Panels"
+            <img 
+            src={gallery1}
+            alt="Solar Installation"
             className="collage-img"
           />
+
         </div>
         <div className="collage-item">
           <img 
@@ -92,7 +94,17 @@ return(
             className="collage-img"
           />
         </div>
-      
+       
+                <img 
+            src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=300&h=200&fit=crop" 
+            alt="Solar Panels"
+            className="collage-img"
+          />
+                    <img 
+            src={gallery2}
+            alt="Solar Panels"
+            className="collage-img"
+          />
       </div>
        <div className="collage-item">
           <img 

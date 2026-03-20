@@ -38,36 +38,55 @@ function About() {
 
       <div className="about-container">
 
-        {/* Left Image */}
-        <div className="about-image animate-slide-left" ref={imageRef}>
-          <img
-            src="https://images.unsplash.com/photo-1509391366360-2e959784a276"
-            alt="Solar Panels"
-          />
- <div className="about-stats">
-
+        {/* Left Image Collage */}
+        <div className="about-image-collage animate-slide-left" ref={imageRef}>
+          <div className="collage-container">
+            <div className="collage-main">
+              <img
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276"
+                alt="Solar Panels"
+              />
+            </div>
+            <div className="collage-grid">
+              <div className="collage-item collage-item-1">
+                <img
+                  src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d"
+                  alt="Solar Installation"
+                />
+              </div>
+              <div className="collage-item collage-item-2">
+                <img
+                  src="https://images.unsplash.com/photo-1473340540804-3f4a5334b87c"
+                  alt="Solar Technology"
+                />
+              </div>
+              <div className="collage-item collage-item-3">
+                <img
+                  src="https://images.unsplash.com/photo-1559307982-b8c93a23c4cf"
+                  alt="Renewable Energy"
+                />
+              </div>
+            </div>
+          </div>
+          
+          <div className="about-stats">
             <div className="stat-box">
               <h3>500+</h3>
               <p>Installations</p>
             </div>
-
             <div className="stat-box">
               <h3>10+</h3>
               <p>Years Experience</p>
             </div>
-
             <div className="stat-box">
               <h3>25 Years</h3>
               <p>Panel Warranty</p>
             </div>
-
           </div>
 
           <button className="about-btn" onClick={handleLearnMore}>
             Learn More
           </button>
-
-        
         </div>
 
         {/* Right Content */}
