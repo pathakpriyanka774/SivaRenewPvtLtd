@@ -77,7 +77,6 @@ function Hero() {
 
   return (
     <>
-      <LeftSidebar currentSlide={currentSlide} onSlideChange={handleSlideChange} />
       <RightSidebar />
       <section 
         className="hero" 
@@ -90,13 +89,14 @@ function Hero() {
         }}
       >
         <div className="hero-overlay">
+          <LeftSidebar currentSlide={currentSlide} onSlideChange={handleSlideChange} />
           <div className={`hero-content ${isAnimating ? 'fade-out' : 'fade-in'}`}>
             {current.isTataSlide ? (
               <>
                 <h1>{current.title}</h1>
                 <h2>{current.subtitle}</h2>
                 <div className="hero-metric">{current.metric}</div>
-                <button className="hero-cta">{current.buttonText}</button>
+                <a href="#projects" className="hero-cta">{current.buttonText}</a>
               </>
             ) : (
               <>
@@ -107,10 +107,10 @@ function Hero() {
                   {current.description}
                 </p>
                 <div className="hero-buttons">
-                  <button className="hero-btn-primary">
+                  <a href="#calculator" className="hero-btn-primary">
                     Calculate My Savings
-                  </button>
-                  <a href="#contact" className="hero-btn-secondary">
+                  </a>
+                  <a href="/contact#contact-form" className="hero-btn-secondary">
                     Get Free Consultation
                   </a>
                 </div>

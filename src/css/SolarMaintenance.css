@@ -1,0 +1,56 @@
+.simple-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.simple-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eaeaea;
+  transition: 0.2s ease;
+}
+
+.simple-card:hover {
+  border-color: #27ae60;
+}
+
+.simple-card h3 {
+  color: #27ae60;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.simple-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.simple-steps {
+  display: grid;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 3px solid #27ae60;
+}
+
+.step span {
+  font-weight: 600;
+  color: #27ae60;
+}
+
+.step p {
+  margin: 0;
+  color: #555;
+}

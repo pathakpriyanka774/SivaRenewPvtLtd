@@ -2,63 +2,37 @@ import React from "react";
 import "../css/testimonials.css";
 
 function Testimonials() {
-  const testimonials = [
-    {
-      text: "Siva Renew helped us reduce our electricity cost by 60%. Highly professional installation team and excellent after-sales support.",
-      author: "Industrial Client",
-      company: "Manufacturing Plant",
-      rating: 5,
-      image: "🏭"
-    },
-    {
-      text: "Best investment decision for our business. The solar system exceeded our expectations and ROI was achieved in just 3 years.",
-      author: "Commercial Client", 
-      company: "Tech Park",
-      rating: 5,
-      image: "🏢"
-    },
-    {
-      text: "Outstanding service from consultation to installation. The team was knowledgeable and completed the project on time.",
-      author: "Residential Client",
-      company: "Home Owner",
-      rating: 5,
-      image: "🏠"
-    },
-    
-  ];
- 
   return (
-    <section className="testimonials">
-      <div className="container">
-                <div  className="section-header animate-fade-in">
-          <h2>What Our <span className="highlight-black">Clients Say</span></h2>
-           <p>Trusted by businesses and homes across India</p>
+    <section className="solar-info-section">
+      <div className="solar-image-wrapper">
+        <img
+          src="/images/solar-banner.jpg"
+          alt="Solar Installation"
+          className="solar-image"
+        />
+
+        <div className="solar-hero-content container">
+          <p className="solar-kicker">Green Power. Smart Savings.</p>
+          <h2 className="section-title">Power Your Home with Solar Energy</h2>
+          <p className="solar-hero-subtitle">
+            A cleaner source of electricity designed for long-term value and reliable day-to-day performance.
+          </p>
         </div>
-       
-        
-        <div className="testimonials-grid">
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="testimonial-card">
-              <div className="testimonial-header">
-                <div className="client-image">{testimonial.image}</div>
-                <div className="client-info">
-                  <h4>{testimonial.author}</h4>
-                  <p className="company">{testimonial.company}</p>
-                  <div className="rating">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <span key={i} className="star">★</span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial-content">
-                <p>"{testimonial.text}"</p>
-              </div>
-              <div className="testimonial-footer">
-                <div className="quote-icon">❝</div>
-              </div>
-            </div>
-          ))}
+      </div>
+
+      <div className="solar-content container">
+        <div className="solar-copy-grid">
+          <p className="section-description section-description-lead">
+            Solar energy is a practical way to lower monthly electricity bills while making better use of your rooftop space. By converting sunlight into clean electricity, your home or business can reduce dependence on conventional power and move toward long-term energy stability.
+          </p>
+
+          <p className="section-description">
+            From site evaluation and system design to installation and support, our team explains each step in clear language so you can make confident decisions.
+          </p>
+
+          <p className="section-description">
+            Whether you are a homeowner, shop owner, or running a small business, we focus on reliable systems, honest guidance, and outcomes that fit your actual needs.
+          </p>
         </div>
       </div>
     </section>

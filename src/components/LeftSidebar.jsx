@@ -5,44 +5,44 @@ function LeftSidebar({ currentSlide, onSlideChange }) {
   const sidebarItems = [
     {
       icon: '⚡',
-      title: 'Powering the Country',
-      subtitle: '335 kWp',
-      description: 'Leading Healthcare Facility',
+      title: 'Power Your Home Smarter',
+      subtitle: 'Lower Monthly Bills',
+      description: 'Perfect for Families',
       slideIndex: 0
     },
     {
       icon: '🏭',
-      title: 'Manufacturing Excellence',
+      title: 'Built for very Business types',
       subtitle: '',
-      description: '',
+      description: '24x7 Support Available',
       slideIndex: 1
     },
     {
       icon: '☀️',
-      title: '#Dependable AsTheSun',
+      title: 'Reliable Daily Savings',
       subtitle: '',
       description: '',
       slideIndex: 2
     },
     {
       icon: '🌍',
-      title: 'Envisaging a Greener Tomorrow',
+      title: 'Cleaner Living, Better Future',
       subtitle: '',
       description: '',
       slideIndex: 3
     },
     {
       icon: '🏢',
-      title: '#1 Rooftop Player',
+      title: 'Easy Rooftop Solar Setup',
       subtitle: '',
       description: '',
       slideIndex: 4
     },
     {
       icon: '🏵️',
-      title: 'Trusted by 1000+ Clients',
+      title: 'Trusted by Families',
       subtitle: '',
-      description: 'Across India',
+      description: 'And Shop Owners',
       slideIndex: 5
     }
   ];

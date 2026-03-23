@@ -40,45 +40,44 @@ function WhyChoose() {
     };
   }, []);
 
-  const features = [
-   {
-      title: "Save Money Every Month",
-      desc: "Reduce your electricity bills by up to 90% with solar power - more savings for your family!",
-      icon: "💰",
-      color: "#10b981"
-    },
-     {
-      title: "Government Money Support",
-      desc: "Get up to 40% subsidy from government - we handle all paperwork for you!",
-      icon: "🏛️",
-      color: "#8b5cf6"
-    },
-    {
-      title: "24*7 Customer Support",
-      desc: "We're always here for you! Call us anytime day or night for help and guidance.",
-      icon: "�",
-      color: "#ef4444"
+ const features = [
+  {
+    title: "Save on Electricity Bills",
+    desc: "Installing solar can help reduce your monthly electricity expenses over time and support your household savings.",
+    icon: "💰",
+    color: "#10b981"
+  },
+  {
+    title: "Government Subsidy Support",
+    desc: "We guide you through the government subsidy process and help you understand the steps involved.",
+    icon: "🏛️",
+    color: "#8b5cf6"
     },
     {
-      title: "25 Years Guarantee",
-      desc: "Your solar panels work for 25+ years - we promise quality that lasts a lifetime!",
-      icon: "🛡️",
-      color: "#f59e0b"
-    },
-    
-    {
-      title: "Earn From Your Solar",
-      desc: "Sell extra electricity back to grid - your roof becomes a money-making machine!",
-      icon: "�",
-      color: "#fbbf24"
-    },
-    {
-      title: "One Complete Solution",
-      desc: "From first visit to final connection - we take care of everything, no tension for you!",
-      icon: "🤝",
-      color: "#3b82f6"
-    }
-  ];
+    title: "24×7 Customer Support",
+    desc: "Our team is available anytime to assist you with your queries, service needs, or guidance.",
+    icon: "📞",
+    color: "#ef4444"
+  },
+  {
+    title: "Reliable & Long-Lasting System",
+    desc: "Solar systems are designed for long-term use and can perform efficiently with proper care and maintenance.",
+    icon: "🛡️",
+    color: "#f59e0b"
+  },
+  {
+    title: "Make Use of Extra Power",
+    desc: "If your system generates extra electricity, you may benefit through net metering as per local policies.",
+    icon: "⚡",
+    color: "#fbbf24"
+  },
+  {
+    title: "Complete End-to-End Service",
+    desc: "From site visit to installation and basic guidance, we support you at every step of your solar journey.",
+    icon: "🤝",
+    color: "#3b82f6"
+  }
+];
 
   return (
     <section className="whychoose" id="whychoose">

@@ -26,28 +26,28 @@ function IndustrialSolarPage() {
             
             <div className="features-grid">
               <div className="feature">
-                <h3>⚡ MW Scale</h3>
-                <p>Large-scale solar installations from 1MW to 100MW+ capacity for industrial power requirements</p>
+                <h3>⚡ Large Scale Power</h3>
+                <p>Big solar installations that can power entire factories and industrial operations</p>
               </div>
               <div className="feature">
-                <h3>🔌 Grid Integration</h3>
-                <p>Seamless integration with industrial grid systems and existing power infrastructure</p>
+                <h3>🔌 Easy Grid Connection</h3>
+                <p>Simple connection to your existing power systems without major changes</p>
               </div>
               <div className="feature">
-                <h3>📊 24/7 Monitoring</h3>
-                <p>Advanced SCADA systems with real-time monitoring, predictive maintenance, and performance analytics</p>
+                <h3>📊 Smart Monitoring</h3>
+                <p>Real-time tracking of power generation and savings through online dashboard</p>
               </div>
               <div className="feature">
-                <h3>🏭 Heavy-Duty Equipment</h3>
-                <p>Industrial-grade solar panels, inverters, and mounting systems designed for harsh environments</p>
+                <h3>🏭 Built to Last</h3>
+                <p>Strong, durable equipment designed to handle tough industrial conditions</p>
               </div>
               <div className="feature">
-                <h3>🔋 Energy Storage</h3>
-                <p>Integrated battery storage solutions for continuous power supply and load shifting</p>
+                <h3>🔋 Backup Power</h3>
+                <p>Battery options to keep your machines running even when the grid goes down</p>
               </div>
               <div className="feature">
-                <h3>🛡️ Asset Protection</h3>
-                <p>Comprehensive insurance coverage and performance guarantees for industrial investments</p>
+                <h3>� Big Savings</h3>
+                <p>Reduce your factory's electricity bills and protect against rising power costs</p>
               </div>
             </div>
           </div>
@@ -155,8 +155,8 @@ function IndustrialSolarPage() {
                     <span className="spec-value">&lt;0.5% per year</span>
                   </div>
                   <div className="spec-item">
-                    <span className="spec-label">Warranty:</span>
-                    <span className="spec-value">25 years performance</span>
+                    <span className="spec-label">Quality:</span>
+                    <span className="spec-value">Premium grade materials</span>
                   </div>
                 </div>
               </div>
@@ -207,38 +207,7 @@ function IndustrialSolarPage() {
           </div>
         </section>
 
-        <section className="benefits">
-          <div className="container">
-            <h2>Industrial Benefits</h2>
-            <div className="benefits-stats">
-              <div className="benefit-stat">
-                <h3>50-80%</h3>
-                <p>Energy Cost Reduction</p>
-              </div>
-              <div className="benefit-stat">
-                <h3>2-4 Years</h3>
-                <p>Payback Period</p>
-              </div>
-              <div className="benefit-stat">
-                <h3>30+ Years</h3>
-                <p>System Lifespan</p>
-              </div>
-              <div className="benefit-stat">
-                <h3>99.5%</h3>
-                <p>System Uptime</p>
-              </div>
-              <div className="benefit-stat">
-                <h3>100%</h3>
-                <p>Custom Engineering</p>
-              </div>
-              <div className="benefit-stat">
-                <h3>24/7</h3>
-                <p>Technical Support</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        
         <section className="cta">
           <div className="container">
             <h2>Power Your Industrial Operations</h2>

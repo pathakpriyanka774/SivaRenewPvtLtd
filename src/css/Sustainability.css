@@ -1,0 +1,325 @@
+.sustainability {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #edf9f0 0%, #dff3e6 100%);
+}
+
+.sustainability-hero {
+  background: linear-gradient(135deg, #14532d 0%, #22c55e 50%, #14532d 100%);
+  color: white;
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.sustainability-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.sustainability-hero p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+.sustainability-content {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #edf9f0 0%, #dff3e6 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sustainability-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sustainability-intro h2 {
+  color: #14532d;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.sustainability-intro p {
+  color: #475569;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sustainability-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.sustainability-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(20, 83, 45, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border-top: 4px solid #22c55e;
+}
+
+.sustainability-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(20, 83, 45, 0.18);
+}
+
+.card-icon {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  color: #16a34a;
+}
+
+.sustainability-card h3 {
+  color: #14532d;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.sustainability-card p {
+  color: #475569;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.sustainability-impact {
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(20, 83, 45, 0.12);
+  border-top: 4px solid #22c55e;
+}
+
+.sustainability-impact h2 {
+  color: #14532d;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+.stat-label {
+  color: #475569;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.sustainability-goals {
+  background: #ffffff;
+  padding: 60px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  box-shadow: 0 5px 20px rgba(20, 83, 45, 0.12);
+  border-top: 4px solid #22c55e;
+}
+
+.sustainability-goals h2 {
+  color: #14532d;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.goals-timeline {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.goal-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #cde8d5;
+}
+
+.goal-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.goal-year {
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  min-width: 100px;
+  text-align: center;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.goal-content {
+  flex: 1;
+}
+
+.goal-content h3 {
+  color: #14532d;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.goal-content p {
+  color: #475569;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.sustainability-cta {
+  background: linear-gradient(135deg, #14532d 0%, #22c55e 50%, #14532d 100%);
+  color: white;
+  padding: 60px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 12px 36px rgba(20, 83, 45, 0.25);
+}
+
+.sustainability-cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.sustainability-cta p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.primary-btn {
+  background: white;
+  color: #14532d;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sustainability-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .sustainability-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .sustainability-intro h2 {
+    font-size: 2rem;
+  }
+  
+  .sustainability-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .sustainability-card {
+    padding: 30px 25px;
+  }
+  
+  .sustainability-impact,
+  .sustainability-goals {
+    padding: 40px 25px;
+  }
+  
+  .sustainability-impact h2,
+  .sustainability-goals h2 {
+    font-size: 2rem;
+  }
+  
+  .impact-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .goal-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .goal-year {
+    margin-right: 0;
+    margin-bottom: 20px;
+    align-self: center;
+  }
+  
+  .sustainability-cta {
+    padding: 40px 25px;
+  }
+  
+  .sustainability-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sustainability-hero {
+    padding: 100px 0 60px;
+  }
+  
+  .sustainability-content {
+    padding: 60px 0;
+  }
+  
+  .impact-stats {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .stat-number {
+    font-size: 2.2rem;
+  }
+}

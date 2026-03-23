@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/process.css";
 import solarSaving from "../assets/images/solarSaving.png";
-
+import installation from "../assets/images/installation.webp";
 function Process() {
   return (
     <section className="process">
@@ -15,7 +15,7 @@ function Process() {
 
         <div className="process-image-container">
           <img 
-            src={solarSaving} 
+            src={installation} 
             alt="Solar Savings Process" 
             className="solar-saving-image"
           />

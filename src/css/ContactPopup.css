@@ -1,0 +1,150 @@
+.contact-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.58);
+  backdrop-filter: blur(3px);
+  z-index: 9999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 84px 16px 16px;
+  animation: popupFade 0.25s ease;
+}
+
+.contact-popup-card {
+  width: min(420px, 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f8fff9 100%);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 18px 52px rgba(15, 23, 42, 0.3);
+  padding: 22px;
+  position: relative;
+  animation: popupUp 0.3s ease;
+}
+
+.contact-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #eef2f7;
+  color: #1f2937;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.contact-popup-close:hover {
+  background: #dbe5ef;
+}
+
+.contact-popup-tag {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #16a34a;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.contact-popup-title {
+  margin: 8px 0 6px;
+  color: #14532d;
+  font-size: 28px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+}
+
+.contact-popup-subtitle {
+  margin: 0 0 16px;
+  color: #475569;
+  font-size: 14px;
+}
+
+.contact-popup-form input,
+.contact-popup-form textarea {
+  width: 100%;
+  border: 1px solid #dbe7dd;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 11px 12px;
+  font-size: 14px;
+  color: #1f2937;
+  margin-bottom: 10px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-popup-form input:focus,
+.contact-popup-form textarea:focus {
+  outline: none;
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.14);
+}
+
+.contact-popup-form textarea {
+  resize: vertical;
+  min-height: 86px;
+}
+
+.contact-popup-form button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 55%, #14532d 100%);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-popup-form button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.3);
+}
+
+.contact-popup-form button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@keyframes popupFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes popupUp {
+  from {
+    opacity: 0;
+    transform: translateY(-14px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-popup-overlay {
+    padding-top: 72px;
+  }
+
+  .contact-popup-card {
+    padding: 18px;
+    border-radius: 14px;
+  }
+
+  .contact-popup-title {
+    font-size: 22px;
+  }
+}

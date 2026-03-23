@@ -27,52 +27,34 @@ function ResidentialSolarPage() {
             <div className="features-grid">
               <div className="feature">
                 <h3>🏠 Custom Design</h3>
-                <p>Tailored solar solutions based on your roof structure and energy consumption patterns</p>
+                <p>Solar solutions designed specifically for your home's roof and family's energy needs</p>
               </div>
               <div className="feature">
-                <h3>📊 Net Metering</h3>
-                <p>Sell excess power back to the grid and earn credits on your electricity bill</p>
+                <h3>💡 Easy Installation</h3>
+                <p>Quick and clean installation process that doesn't disrupt your daily routine</p>
               </div>
               <div className="feature">
-                <h3>🛡️ 25 Year Warranty</h3>
-                <p>Long-term warranty on solar panels with performance guarantees</p>
+                <h3>� Lower Monthly Bills</h3>
+                <p>Start saving money from day one with reduced electricity costs every month</p>
               </div>
               <div className="feature">
-                <h3>💰 Cost Savings</h3>
-                <p>Reduce electricity bills by up to 80% with solar energy</p>
+                <h3>🌱 Eco-Friendly</h3>
+                <p>Help protect the environment while powering your home with clean energy</p>
+              </div>
+              <div className="feature">
+                <h3>� Smart Monitoring</h3>
+                <p>Track your solar power generation and savings through your smartphone</p>
+              </div>
+              <div className="feature">
+                <h3>�️ Quality Assurance</h3>
+                <p>High-quality equipment with reliable performance for years to come</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="process">
-          <div className="container">
-            <h2>Installation Process</h2>
-            <div className="steps">
-              <div className="step">
-                <div className="step-number">1</div>
-                <h3>Site Assessment</h3>
-                <p>Technical evaluation of your location and energy requirements</p>
-              </div>
-              <div className="step">
-                <div className="step-number">2</div>
-                <h3>System Design</h3>
-                <p>Custom solar system design optimized for your home</p>
-              </div>
-              <div className="step">
-                <div className="step-number">3</div>
-                <h3>Installation</h3>
-                <p>Professional installation by certified technicians</p>
-              </div>
-              <div className="step">
-                <div className="step-number">4</div>
-                <h3>Commissioning</h3>
-                <p>System testing and connection to the grid</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
+        
+          
         <section className="cta">
           <div className="container">
             <h2>Ready to Go Solar?</h2>

@@ -129,29 +129,7 @@ function CommercialSolarPage() {
           </div>
         </section>
 
-        <section className="benefits">
-          <div className="container">
-            <h2>Business Benefits</h2>
-            <div className="benefits-stats">
-              <div className="benefit-stat">
-                <h3>40-70%</h3>
-                <p>Reduction in Electricity Costs</p>
-              </div>
-              <div className="benefit-stat">
-                <h3>3-5 Years</h3>
-                <p>Typical Payback Period</p>
-              </div>
-              <div className="benefit-stat">
-                <h3>25+ Years</h3>
-                <p>System Lifespan</p>
-              </div>
-              <div className="benefit-stat">
-                <h3>100%</h3>
-                <p>Accelerated Depreciation</p>
-              </div>
-            </div>
-          </div>
-        </section>
+        
 
         <section className="cta">
           <div className="container">

@@ -31,17 +31,21 @@
   height: 100%;
   width: 100%;
   padding: 70px 20px 90px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) minmax(0, 900px) minmax(220px, 300px);
+  gap: 24px;
   justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
 
 .hero-content {
+  grid-column: 2;
   text-align: center;
   color: white;
   max-width: 900px;
+  justify-self: center;
   animation: slideInUp 1s ease-out;
 }
 
@@ -160,6 +164,11 @@
   .hero {
     min-height: 100vh;
     background-attachment: scroll;
+  }
+
+  .hero-overlay {
+    display: flex;
+    justify-content: center;
   }
 
   .hero-content h1 {

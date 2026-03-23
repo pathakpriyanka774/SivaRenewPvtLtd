@@ -6,6 +6,7 @@ import industrial from "../assets/images/industrialGujrat.png";
 import jaipur from "../assets/images/jaipur.png";
 import gallery1 from "../assets/images/gallery1.png";
 import gallery2 from "../assets/images/gallery2.jpg";
+import collag from "../assets/images/collag1.jpg";  
 function Contact(){
   const [formData, setFormData] = useState({
     name: '',
@@ -105,6 +106,11 @@ return(
             alt="Solar Panels"
             className="collage-img"
           />
+                              <img 
+            src={collag}
+            alt="Solar Panels"
+            className="collage-img"
+          />
       </div>
        <div className="collage-item">
           <img 
@@ -113,6 +119,7 @@ return(
             className="collage-img"
           />
         </div>
+        
     </div>
 
     <div className="form-column">

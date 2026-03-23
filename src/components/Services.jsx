@@ -1,11 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../css/services.css";
-import residential from "../assets/images/Residential.png";
+import comm from "../assets/images/comm.jpg";
+import indus from "../assets/images/indus.webp";
+import resid from "../assets/images/resid.png";
 import industrialSolar from "../assets/images/industrialSolar.png";
-import maintenace from "../assets/images/maintenance.png";
-import storage from "../assets/images/storage.png";
-
+import epc from "../assets/images/epc.webp";
+import store  from "../assets/images/store.webp";
+import clean from "../assets/images/clean.avif";
 function Services() {
   const navigate = useNavigate();
   const sectionRef = useRef(null);
@@ -42,7 +44,7 @@ function Services() {
       subtitle: "Power Your Home",
       description: "Transform your home into an energy-independent powerhouse with our cutting-edge solar solutions.",
       icon: "⚡",
-      image: residential,
+      image: resid,
       features: ["70% Bill Reduction", "Smart Monitoring"]
     },
     {
@@ -50,7 +52,7 @@ function Services() {
       subtitle: "Grow Your Business",
       description: "Elevate your business with sustainable energy solutions that drive profitability and environmental responsibility.",
       icon: "🏢",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&h=250&fit=crop",
+      image: comm,
       features: [ "Brand Enhancement", "Zero Downtime"]
     },
     {
@@ -58,7 +60,7 @@ function Services() {
       subtitle: "Scale Your Industry", 
       description: "Power large-scale operations with unlimited clean energy designed for industrial demands.",
       icon: "🏭",
-      image: industrialSolar,
+      image: indus,
       features: ["Unlimited Power", "24/7 Support"]
     },
     {
@@ -66,7 +68,7 @@ function Services() {
       subtitle: "Engineering Excellence",
       description: "Complete Engineering, Procurement, and Construction services for utility-scale solar projects with industry-leading expertise.",
       icon: "⚙️",
-      image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=400&h=250&fit=crop",
+      image: epc,
       features: ["Quality Assurance", "Timeline Delivery"]
     },
     {
@@ -74,7 +76,7 @@ function Services() {
       subtitle: "Store Your Power",
       description: "Maximize your energy independence with advanced battery storage solutions for round-the-clock power availability.",
       icon: "🔋",
-      image: storage,
+      image: store,
       features: ["24/7 Power Backup", "Smart Energy Management"]
     },
     {
@@ -82,7 +84,7 @@ function Services() {
       subtitle: "Optimize Performance",
       description: "Keep your solar investment performing at peak efficiency with our comprehensive maintenance and monitoring services.",
       icon: "🔧",
-      image: maintenace,
+      image: clean,
       features: ["Regular Inspections", "Emergency Support"]
     }
   ];
@@ -91,8 +93,8 @@ function Services() {
     <section className="solar-solutions" id="solutions">
       <div className="container">
         <div ref={sectionRef} className="section-header animate-fade-in">
-          <h2>Renewable <span className="highlight">Energy Services</span></h2>
-          <p>Empowering every space with sustainable energy innovation</p>
+          <h2>Renewable <span className="services-highlight">Energy Services</span></h2>
+          <p className="services-subline">Empowering every space with sustainable energy innovation</p>
         </div>
 
         <div className="solutions-grid">
@@ -104,7 +106,7 @@ function Services() {
             >
               <div className="card-header">
                 <div className="icon-container">
-                  <span className="icon">{solution.icon}</span>
+                  <span className="solution-icon">{solution.icon}</span>
                 </div>
                 <div className="header-content">
                   <h3>{solution.title}</h3>
@@ -137,7 +139,7 @@ function Services() {
                   onClick={() => handleExplore(solution.title)}
                 >
                   Explore Solution
-                  <span className="arrow">→</span>
+                  <span className="explore-arrow">→</span>
                 </button>
               </div>
             </div>

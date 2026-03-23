@@ -84,20 +84,12 @@ function Calculator() {
 
   return (
     <section className="calculator" id="calculator">
-      <div className="calculator-bg-animation">
-        <div className="calculator-particle"></div>
-        <div className="calculator-particle"></div>
-        <div className="calculator-particle"></div>
-        <div className="calculator-particle"></div>
-      </div>
-      
       <div className="calculator-container">
         <div className="calculator-header">
           <h2>Solar Calculator</h2>
         </div>
 
         <div className="calculator-card">
-          {/* Section 1: Select Option */}
           <div className="calculator-section">
             <h3>1. Select any one option</h3>
             <div className="option-buttons">
@@ -105,23 +97,31 @@ function Calculator() {
                 className={`option-btn ${selectedOption === "bill" ? "active" : ""}`}
                 onClick={() => setSelectedOption("bill")}
               >
-                Monthly Electricity Bill
+                <span className="option-check" aria-hidden="true"></span>
+                <span>Monthly Electricity Bill</span>
               </button>
+
+              <span className="option-or">(OR)</span>
+
               <button
                 className={`option-btn ${selectedOption === "consumption" ? "active" : ""}`}
                 onClick={() => setSelectedOption("consumption")}
               >
-                Monthly Electricity Consumption Units
+                <span className="option-check" aria-hidden="true"></span>
+                <span>Monthly Electricity Consumption Units</span>
               </button>
+
+              <span className="option-or">(OR)</span>
+
               <button
                 className={`option-btn ${selectedOption === "area" ? "active" : ""}`}
                 onClick={() => setSelectedOption("area")}
               >
-                Total Area of the Rooftop
+                <span className="option-check" aria-hidden="true"></span>
+                <span>Total Area of the Rooftop</span>
               </button>
             </div>
 
-            {/* Input field based on selection */}
             {selectedOption && (
               <div className="input-section">
                 {selectedOption === "bill" && (
@@ -164,7 +164,6 @@ function Calculator() {
             )}
           </div>
 
-          {/* Section 2: State and Category */}
           <div className="calculator-section">
             <h3>2. Select State and Customer Category</h3>
             <div className="select-group">
@@ -192,7 +191,6 @@ function Calculator() {
             </div>
           </div>
 
-          {/* Section 3: Unit Cost */}
           <div className="calculator-section">
             <h3>3. What is your average Electricity Unit Cost? :</h3>
             <div className="unit-cost-group">
@@ -206,7 +204,6 @@ function Calculator() {
             </div>
           </div>
 
-          {/* Calculate Button */}
           <div className="calculate-section">
             <button
               onClick={handleCalculate}
@@ -223,10 +220,8 @@ function Calculator() {
             )}
           </div>
 
-          {/* Results */}
           {result && !isCalculating && (
             <div className="result-card">
-              <div className="result-icon">☀️</div>
               <div className="result-content">
                 <h3>Recommended Solar System</h3>
                 <div className="result-details">

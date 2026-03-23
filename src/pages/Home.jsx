@@ -9,10 +9,12 @@ import Calculator from '../components/Calculator';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import ContactPopup from '../components/ContactPopup';
 
 function Home() {
   return (
     <div className="home">
+      <ContactPopup />
       <Navbar />
       <Hero />
       <Services />
@@ -20,7 +22,6 @@ function Home() {
       <Process />
       <Projects />
       <Calculator />
-      <Testimonials />
       <Contact />
       <Footer />
     </div>

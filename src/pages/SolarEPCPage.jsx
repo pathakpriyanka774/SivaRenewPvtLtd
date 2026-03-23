@@ -146,101 +146,53 @@ function SolarEPCPage() {
             <div className="services-grid">
               <div className="epc-service">
                 <div className="service-icon">📋</div>
-                <h3>Project Development</h3>
-                <p>Complete project development from concept to financial closure</p>
+                <h3>Project Planning</h3>
+                <p>We handle everything from start to finish for your solar project</p>
                 <div className="service-features">
-                  <span>Land acquisition support</span>
-                  <span>Permitting and approvals</span>
-                  <span>Financial modeling</span>
-                  <span>Risk assessment</span>
+                  <span>Site selection help</span>
+                  <span>Government permits</span>
+                  <span>Cost planning</span>
+                  <span>Safety checks</span>
                 </div>
               </div>
               <div className="epc-service">
                 <div className="service-icon">🏗️</div>
-                <h3>Civil & Structural Works</h3>
-                <p>Comprehensive civil engineering and structural solutions</p>
+                <h3>Construction Work</h3>
+                <p>Building strong foundations and structures for solar panels</p>
                 <div className="service-features">
-                  <span>Site preparation</span>
-                  <span>Foundation design</span>
-                  <span>Structural engineering</span>
-                  <span>Access roads</span>
+                  <span>Land preparation</span>
+                  <span>Strong foundations</span>
+                  <span>Panel mounting</span>
+                  <span>Site access roads</span>
                 </div>
               </div>
               <div className="epc-service">
                 <div className="service-icon">⚡</div>
-                <h3>Electrical Systems</h3>
-                <p>Complete electrical system design and installation</p>
+                <h3>Power Setup</h3>
+                <p>Complete electrical work to connect solar to your systems</p>
                 <div className="service-features">
-                  <span>Power evacuation</span>
-                  <span>Switchyard design</span>
-                  <span>Control systems</span>
-                  <span>Protection systems</span>
+                  <span>Power connections</span>
+                  <span>Control panels</span>
+                  <span>Safety systems</span>
+                  <span>Grid connection</span>
                 </div>
               </div>
               <div className="epc-service">
                 <div className="service-icon">📊</div>
-                <h3>Quality Assurance</h3>
-                <p>Rigorous quality control throughout project lifecycle</p>
+                <h3>Quality Control</h3>
+                <p>Making sure everything works perfectly before we finish</p>
                 <div className="service-features">
-                  <span>Material testing</span>
-                  <span>Installation quality</span>
-                  <span>Performance validation</span>
-                  <span>Compliance verification</span>
+                  <span>Equipment testing</span>
+                  <span>Installation checks</span>
+                  <span>Performance testing</span>
+                  <span>Safety verification</span>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="project-types">
-          <div className="container">
-            <h2>Project Types We Handle</h2>
-            <div className="project-grid">
-              <div className="project-type">
-                <h3>Utility-Scale Solar</h3>
-                <p>Large-scale solar farms (10MW - 500MW+)</p>
-                <div className="project-stats">
-                  <div className="stat">
-                    <span className="stat-number">50+</span>
-                    <span className="stat-label">Projects Completed</span>
-                  </div>
-                  <div className="stat">
-                    <span className="stat-number">2GW+</span>
-                    <span className="stat-label">Capacity Installed</span>
-                  </div>
-                </div>
-              </div>
-              <div className="project-type">
-                <h3>Commercial Solar</h3>
-                <p>Commercial and industrial solar installations (1MW - 10MW)</p>
-                <div className="project-stats">
-                  <div className="stat">
-                    <span className="stat-number">200+</span>
-                    <span className="stat-label">Projects Completed</span>
-                  </div>
-                  <div className="stat">
-                    <span className="stat-number">500MW+</span>
-                    <span className="stat-label">Capacity Installed</span>
-                  </div>
-                </div>
-              </div>
-              <div className="project-type">
-                <h3>Solar Parks</h3>
-                <p>Development of solar parks and energy hubs</p>
-                <div className="project-stats">
-                  <div className="stat">
-                    <span className="stat-number">10+</span>
-                    <span className="stat-label">Solar Parks</span>
-                  </div>
-                  <div className="stat">
-                    <span className="stat-number">1GW+</span>
-                    <span className="stat-label">Park Capacity</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         <section className="benefits">
           <div className="container">
@@ -262,10 +214,7 @@ function SolarEPCPage() {
                 <h3>Cost</h3>
                 <p>Optimization</p>
               </div>
-              <div className="benefit-stat">
-                <h3>25+ Years</h3>
-                <p>Experience</p>
-              </div>
+              
               <div className="benefit-stat">
                 <h3>24/7</h3>
                 <p>Project Support</p>

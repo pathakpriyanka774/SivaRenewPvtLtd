@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Sora:wght@600;700;800&display=swap');
+
 .services {
   padding: var(--spacing-section-y) 20px;
   background: linear-gradient(135deg, var(--color-bg-section) 0%, #f1f5f9 100%);
@@ -42,10 +44,7 @@
 }
 
 .highlight {
-  background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #000000;
   font-weight: 700;
 }
 
@@ -340,13 +339,35 @@
 
 /* Solar Solutions Section - Professional Design */
 .solar-solutions {
-  padding: 100px 20px;
-  background: #f8f9fa;
+  padding: 110px 20px;
+  background: linear-gradient(135deg, #eaf9ee 0%, #dff3e6 50%, #f3fbf5 100%);
   position: relative;
   overflow: hidden;
 }
 
-.container {
+.solar-solutions::before {
+  content: "";
+  position: absolute;
+  top: -140px;
+  left: -120px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(74, 222, 128, 0.24), transparent 68%);
+}
+
+.solar-solutions::after {
+  content: "";
+  position: absolute;
+  right: -140px;
+  bottom: -180px;
+  width: 390px;
+  height: 390px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.18), transparent 70%);
+}
+
+.solar-solutions .container {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -354,14 +375,14 @@
 }
 
 /* Section Header */
-.section-header {
+.solar-solutions .section-header {
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   opacity: 0;
   transform: translateY(30px);
 }
 
-.section-header.animate-fade-in {
+.solar-solutions .section-header.animate-fade-in {
   animation: fadeInUp 0.8s ease-out forwards;
 }
 
@@ -372,49 +393,60 @@
   }
 }
 
-.section-header h2 {
+.solar-solutions .section-header h2 {
   font-size: 48px;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 20px;
+  font-weight: 800;
+  color: #14532d;
+  margin-bottom: 16px;
   line-height: 1.2;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.6px;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-.highlight {
-  color: #2c3e50;
-  font-weight: 700;
+.solar-solutions .services-highlight {
+  color: #14532d;
+  font-weight: 800;
 }
 
-.section-header p {
+.solar-solutions .services-subline {
   font-size: 18px;
-  color: #7f8c8d;
+  color: #3f5e4d;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
 }
 
 /* Solutions Grid */
-.solutions-grid {
+.solar-solutions .solutions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
 }
 
 /* Solution Cards */
-.solution-card {
-  background: #ffffff;
-  border: 1px solid #e1e8ed;
-  border-radius: 12px;
+.solar-solutions .solution-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f9fdff 100%);
+  border: 1px solid rgba(34, 197, 94, 0.24);
+  border-radius: 16px;
   overflow: hidden;
   opacity: 0;
   transform: translateY(50px);
   transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 36px rgba(20, 83, 45, 0.10);
+  position: relative;
 }
 
-.solution-card.animate-slide-up {
+.solar-solutions .solution-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #86efac 0%, #22c55e 55%, #14532d 100%);
+}
+
+.solar-solutions .solution-card.animate-slide-up {
   animation: slideUp 0.6s ease-out forwards;
 }
 
@@ -425,104 +457,111 @@
   }
 }
 
-.solution-card:hover {
+.solar-solutions .solution-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-  border-color: #d35400;
+  box-shadow: 0 20px 44px rgba(20, 83, 45, 0.18);
+  border-color: rgba(34, 197, 94, 0.45);
 }
 
 /* Card Image */
-.card-image {
+.solar-solutions .card-image {
   position: relative;
-  height: 180px;
+  height: 190px;
   overflow: hidden;
 }
 
-.solution-image {
+.solar-solutions .solution-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.solution-card:hover .solution-image {
+.solar-solutions .solution-card:hover .solution-image {
   transform: scale(1.05);
 }
 
 /* Card Header */
-.card-header {
+.solar-solutions .card-header {
   padding: 24px;
   display: flex;
   align-items: center;
   gap: 16px;
-  background: #ffffff;
-  border-bottom: 1px solid #f1f3f4;
+  background: linear-gradient(180deg, rgba(236, 253, 245, 0.86) 0%, rgba(220, 252, 231, 0.8) 100%);
+  border-bottom: 1px solid rgba(134, 239, 172, 0.35);
 }
 
 /* Icon Container */
-.icon-container {
+.solar-solutions .icon-container {
   width: 48px;
   height: 48px;
-  background: #d35400;
+  background: linear-gradient(135deg, #22c55e 0%, #14532d 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  box-shadow: 0 6px 16px rgba(22, 101, 52, 0.30);
 }
 
-.icon {
+.solar-solutions .solution-icon {
   font-size: 24px;
   color: #ffffff;
 }
 
 /* Header Content */
-.header-content h3 {
-  color: #2c3e50;
+.solar-solutions .header-content h3 {
+  color: #14532d;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 4px 0;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Sora', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: -0.2px;
 }
 
-.subtitle {
-  color: #7f8c8d;
+.solar-solutions .subtitle {
+  color: #3d6b4f;
   font-size: 14px;
   margin: 0;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: 'Manrope', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 /* Card Body */
-.card-body {
+.solar-solutions .card-body {
   padding: 24px;
   background: #ffffff;
 }
 
-.description {
-  color: #5a6c7d;
+.solar-solutions .description {
+  color: #416049;
   font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0 0 20px 0;
+  font-family: 'Manrope', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
 }
 
 /* Features List */
-.features-list {
+.solar-solutions .features-list {
   margin-bottom: 24px;
 }
 
-.feature-item {
+.solar-solutions .feature-item {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 8px;
-  color: #5a6c7d;
+  color: #355441;
   font-size: 14px;
+  font-family: 'Manrope', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 600;
 }
 
-.check-icon {
+.solar-solutions .check-icon {
   width: 18px;
   height: 18px;
-  background: #d35400;
+  background: linear-gradient(135deg, #4ade80, #166534);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -534,48 +573,50 @@
 }
 
 /* Explore Button */
-.explore-btn {
+.solar-solutions .explore-btn {
   width: 100%;
   padding: 14px 20px;
-  background: #d35400;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 50%, #14532d 100%);
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   color: #ffffff;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  font-family: 'Sora', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  letter-spacing: 0.2px;
 }
 
-.explore-btn:hover {
-  background: #e67e22;
+.solar-solutions .explore-btn:hover {
+  filter: saturate(1.08) brightness(1.03);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(211, 84, 0, 0.3);
+  box-shadow: 0 8px 20px rgba(22, 101, 52, 0.35);
 }
 
-.arrow {
+.solar-solutions .explore-arrow {
   transition: transform 0.3s ease;
 }
 
-.explore-btn:hover .arrow {
+.solar-solutions .explore-btn:hover .explore-arrow {
   transform: translateX(4px);
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .solar-solutions {
-    padding: 80px 20px;
+    padding: 84px 20px;
   }
   
-  .section-header h2 {
+  .solar-solutions .section-header h2 {
     font-size: 42px;
   }
   
-  .solutions-grid {
+  .solar-solutions .solutions-grid {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
   }
@@ -586,36 +627,36 @@
     padding: 60px 16px;
   }
   
-  .section-header {
+  .solar-solutions .section-header {
     margin-bottom: 50px;
   }
   
-  .section-header h2 {
+  .solar-solutions .section-header h2 {
     font-size: 36px;
   }
   
-  .section-header p {
+  .solar-solutions .services-subline {
     font-size: 16px;
   }
   
-  .solutions-grid {
+  .solar-solutions .solutions-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   
-  .card-header {
+  .solar-solutions .card-header {
     padding: 20px;
   }
   
-  .card-body {
+  .solar-solutions .card-body {
     padding: 20px;
   }
   
-  .feature-item {
+  .solar-solutions .feature-item {
     font-size: 13px;
   }
   
-  .explore-btn {
+  .solar-solutions .explore-btn {
     padding: 12px 16px;
     font-size: 14px;
   }
@@ -626,50 +667,50 @@
     padding: 50px 12px;
   }
   
-  .section-header h2 {
+  .solar-solutions .section-header h2 {
     font-size: 30px;
   }
   
-  .section-header p {
+  .solar-solutions .services-subline {
     font-size: 15px;
   }
   
-  .icon-container {
+  .solar-solutions .icon-container {
     width: 42px;
     height: 42px;
   }
   
-  .icon {
+  .solar-solutions .solution-icon {
     font-size: 20px;
   }
   
-  .header-content h3 {
+  .solar-solutions .header-content h3 {
     font-size: 18px;
   }
   
-  .header-content .subtitle {
+  .solar-solutions .header-content .subtitle {
     font-size: 13px;
   }
   
-  .card-body {
+  .solar-solutions .card-body {
     padding: 16px;
   }
   
-  .description {
+  .solar-solutions .description {
     font-size: 14px;
   }
   
-  .feature-item {
+  .solar-solutions .feature-item {
     font-size: 12px;
   }
   
-  .check-icon {
+  .solar-solutions .check-icon {
     width: 16px;
     height: 16px;
     font-size: 9px;
   }
   
-  .explore-btn {
+  .solar-solutions .explore-btn {
     padding: 10px 14px;
     font-size: 13px;
   }

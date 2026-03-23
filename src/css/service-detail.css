@@ -3,13 +3,13 @@
 /* Base Styles */
 .service-detail {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, #edf9f0 0%, #dff3e6 100%);
 }
 
 /* Hero Section */
 .service-hero {
   padding: 120px 20px;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #14532d 0%, #22c55e 50%, #14532d 100%);
   color: #ffffff;
   text-align: center;
   position: relative;
@@ -23,7 +23,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(6, 182, 212, 0.1), transparent);
+  background: linear-gradient(45deg, transparent, rgba(34, 197, 94, 0.08), transparent);
   animation: float 20s ease-in-out infinite;
 }
 
@@ -57,7 +57,7 @@
 .hero-metric {
   font-size: 48px;
   font-weight: 900;
-  color: #F5B400;
+  color: #86efac;
   margin-bottom: 30px;
   text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -68,20 +68,20 @@
   padding: 16px 40px;
   font-size: 18px;
   font-weight: 700;
-  color: #ffffff;
-  background: linear-gradient(135deg, #F5B400, #d89c00);
+  color: white;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 24px rgba(245, 180, 0, 0.3);
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.3);
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   animation: fadeInUp 1.6s ease-out;
 }
 
 .hero-cta:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(245, 180, 0, 0.4);
+  box-shadow: 0 12px 32px rgba(34, 197, 94, 0.4);
 }
 
 .hero-content p {
@@ -107,8 +107,8 @@
 .service-cta h2 {
   font-size: 48px;
   font-weight: 900;
-  color: #000000;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3), 0 0 20px rgba(6, 182, 212, 0.2);
+  color: #14532d;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2), 0 0 20px rgba(34, 197, 94, 0.15);
   margin-bottom: 40px;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   letter-spacing: -0.5px;
@@ -125,7 +125,7 @@
   left: -10px;
   right: -10px;
   bottom: -10px;
-  background: linear-gradient(45deg, transparent, rgba(6, 182, 212, 0.1), transparent);
+  background: linear-gradient(45deg, transparent, rgba(34, 197, 94, 0.08), transparent);
   border-radius: 50%;
   animation: rotate 4s linear infinite;
   z-index: -1;
@@ -141,12 +141,12 @@
 .service-benefits,
 .service-process {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, #edf9f0 0%, #dff3e6 100%);
 }
 
 .service-cta {
   padding: 80px 20px;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #14532d 0%, #22c55e 50%, #14532d 100%);
   text-align: center;
 }
 
@@ -195,12 +195,13 @@
 .step-item {
   background: #ffffff;
   padding: 40px 30px;
-  border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(20, 83, 45, 0.08);
   text-align: center;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  border-top: 4px solid #22c55e;
 }
 
 .feature-item::before,
@@ -212,9 +213,10 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, transparent, rgba(6, 182, 212, 0.05), transparent);
+  background: linear-gradient(45deg, transparent, rgba(34, 197, 94, 0.04), transparent);
   transform: translateX(-100%);
   transition: transform 0.6s ease;
+  z-index: 1;
 }
 
 .feature-item:hover::before,
@@ -226,26 +228,46 @@
 .feature-item:hover,
 .benefit-item:hover,
 .step-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(20, 83, 45, 0.12);
+  background: linear-gradient(135deg, #ffffff 0%, #f8fdf8 100%);
 }
 
 .step-item:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
 
 /* Icons */
 .feature-icon,
 .benefit-icon {
-  font-size: 48px;
-  margin-bottom: 20px;
-  display: block;
-  animation: bounce 2s ease-in-out infinite;
+  font-size: 52px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+  animation: subtleFloat 2.5s ease-in-out infinite;
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-  40%, 60% { transform: translateY(-10px); }
+.feature-item:hover .feature-icon,
+.benefit-item:hover .benefit-icon {
+  background: linear-gradient(135deg, #86efac 0%, #4ade80 100%);
+  box-shadow: 0 12px 28px rgba(34, 197, 94, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.6);
+  transform: scale(1.08);
+}
+
+@keyframes subtleFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
 }
 
 /* Card Headers */
@@ -254,13 +276,17 @@
 .step-content h3 {
   font-size: 22px;
   font-weight: 700;
-  color: #000000;
-  margin-bottom: 12px;
+  color: #14532d;
+  margin-bottom: 16px;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.3px;
+  position: relative;
+  z-index: 2;
 }
 
 .step-content h3 {
   font-size: 18px;
+  margin-bottom: 12px;
 }
 
 /* Card Text */
@@ -269,16 +295,19 @@
 .step-content p {
   font-size: 16px;
   color: #475569;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
 }
 
 /* Step Number */
 .step-number {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #ffffff;
   border-radius: 50%;
   display: flex;
@@ -288,7 +317,7 @@
   font-weight: 700;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
 }
 
 /* Buttons */
@@ -315,10 +344,10 @@
 }
 
 .primary-cta {
-  background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+  background: linear-gradient(135deg, #22c55e, #16a34a);
   color: #ffffff;
   border: none;
-  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.3);
 }
 
 .primary-cta::before {
@@ -338,7 +367,7 @@
 
 .primary-cta:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 32px rgba(6, 182, 212, 0.4);
+  box-shadow: 0 12px 32px rgba(34, 197, 94, 0.4);
 }
 
 .secondary-cta {
