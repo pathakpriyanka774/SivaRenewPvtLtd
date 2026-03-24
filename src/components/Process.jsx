@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/process.css";
 import solarSaving from "../assets/images/solarSaving.png";
-import installation from "../assets/images/installation.webp";
+import installation from "../assets/images/solarSaving.png";
 function Process() {
   return (
     <section className="process">
