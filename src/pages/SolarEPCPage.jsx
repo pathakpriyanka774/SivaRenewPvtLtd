@@ -18,9 +18,8 @@ function SolarEPCPage() {
         <section className="service-overview">
           <div className="container">
             <h2>End-to-End Solar Project Excellence</h2>
-            <p>
-              Our Solar EPC (Engineering, Procurement, and Construction) services deliver comprehensive 
-              turnkey solutions for solar power projects. From initial feasibility studies to final 
+            <p className="projectExcellence">
+              Our Solar EPC (Engineering, Procurement, and Construction) services deliver comprehensive turnkey solutions for solar power projects. From initial feasibility studies to final 
               commissioning and long-term operations, we manage every aspect of your solar project 
               with precision, expertise, and commitment to excellence.
             </p>
@@ -186,6 +185,28 @@ function SolarEPCPage() {
                   <span>Installation checks</span>
                   <span>Performance testing</span>
                   <span>Safety verification</span>
+                </div>
+              </div>
+              <div className="epc-service">
+                <div className="service-icon">🔧</div>
+                <h3>Equipment Supply</h3>
+                <p>Procurement and delivery of high-quality solar components</p>
+                <div className="service-features">
+                  <span>Solar panels</span>
+                  <span>Inverters</span>
+                  <span>Mounting structures</span>
+                  <span>Cables & wiring</span>
+                </div>
+              </div>
+              <div className="epc-service">
+                <div className="service-icon">📈</div>
+                <h3>Performance Monitoring</h3>
+                <p>Advanced monitoring systems for optimal solar plant performance</p>
+                <div className="service-features">
+                  <span>Real-time monitoring</span>
+                  <span>Performance analytics</span>
+                  <span>Maintenance alerts</span>
+                  <span>Energy reporting</span>
                 </div>
               </div>
             </div>

@@ -164,7 +164,7 @@ function IndustrialSolarPage() {
           </div>
         </section>
 
-        <section className="process">
+        {/* <section className="process">
           <div className="container">
             <h2>Industrial Project Implementation</h2>
             <div className="steps">
@@ -205,7 +205,7 @@ function IndustrialSolarPage() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         
         <section className="cta">

@@ -5,6 +5,7 @@ import hero2 from "../assets/images/hero2.jpeg";
 import hero3 from "../assets/images/hero3.png";
 import wind from "../assets/images/wind.png";
 import hero4 from "../assets/images/hero4.png";
+import modi from "../assets/images/modi.png";
 import LeftSidebar from "./LeftSidebar";
 import RightSidebar from "./RightSidebar";
 
@@ -14,7 +15,7 @@ function Hero() {
 
   const heroContent = [
     {
-      title: "SHIVA RENEW SOLAR ROOFTOP",
+      title: "SIVA RENEW SOLAR ROOFTOP",
       subtitle: "POWERING THE ROOFS",
       metric: "1.6 GWP",
       buttonText: "KNOW MORE",
@@ -22,17 +23,18 @@ function Hero() {
       bgImage: hero1
     },
     {
-      title: "Stop Paying Electricity Bills!",
-      highlight: "Go Solar Today",
-      description: "Generate your own FREE electricity at home - save up to ₹90,000 every year with solar power!",
-      bgImage: hero2
-    },
-    {
       title: "Government Gives You 40% Money Back",
       highlight: "Limited Time Offer",
       description: "Install solar with just 60% cost - government pays the rest! We handle all paperwork for FREE.",
       bgImage: hero3
     },
+    {
+      title: "Stop Paying Electricity Bills!",
+      highlight: "Go Solar Today",
+      description: "Generate your own FREE electricity at home - save up to ₹90,000 every year with solar power!",
+      bgImage: hero2
+    },
+    
     {
       title: "Your Roof Can Earn Money!",
       highlight: "Sell Extra Power",
@@ -44,6 +46,12 @@ function Hero() {
       highlight: "High-Yield Passive Income",
       description: "Turn your open land into a powerhouse! Generate massive clean energy and enjoy steady returns by feeding the national grid for decades.",
       bgImage: wind
+    },
+    {
+      title: "Government Pays 40% of Your Solar Cost!",
+      highlight: "Up to 78,000 Subsidy",
+      description: "Install rooftop solar with just 60% payment - PM Surya Ghar Yojana covers the rest! Free paperwork assistance included.",
+      bgImage: modi
     },
     {
       title: "Powering a Greener Tomorrow, Together.",

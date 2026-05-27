@@ -55,17 +55,46 @@
 .service-overview h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   color: #1e293b;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .service-overview > p {
   text-align: center;
-  font-size: 1.1rem;
-  max-width: 800px;
+  font-size: 1.15rem;
+  max-width: 900px;
   margin: 0 auto 60px;
-  color: #64748b;
+  color: #475569;
   line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-align-last: center;
+  padding: 0 20px;
+  text-indent: 0;
+  white-space: normal;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.projectExcellence {
+  text-align: justify;
+  text-align-last: center;
+  font-size: 1.15rem;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  color: #475569;
+  line-height: 1.8;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  padding: 0 20px;
+  text-indent: 0;
+  white-space: normal;
+  word-wrap: break-word;
+  hyphens: auto;
+  position: relative;
+
 }
 
 .features-grid {
@@ -217,7 +246,51 @@
   box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4);
 }
 
+@media (max-width: 1024px) {
+  .service-hero {
+    padding: 140px 20px 100px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .service-overview h2,
+  .process h2,
+  .cta h2,
+  .business-sectors h2,
+  .benefits h2,
+  .industrial-applications h2,
+  .technical-specs h2,
+  .epc-process h2,
+  .epc-services h2,
+  .project-types h2 {
+    font-size: 2.2rem;
+  }
+  
+  .features-grid,
+  .sectors-grid,
+  .applications-grid,
+  .specs-grid,
+  .services-grid,
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
+  .service-hero {
+    padding: 120px 15px 80px;
+  }
+
   .hero-content h1 {
     font-size: 2.5rem;
   }

@@ -6,12 +6,12 @@ function RightSidebar() {
     {
       icon: '📞',
       label: 'Call',
-      href: 'tel:+1234567890'
+      href: 'tel:+919667666477'
     },
     {
       icon: '✉️',
       label: 'Email',
-      href: 'mailto:info@shiva-renew.com'
+      href: 'mailto:info@sivarenew.com'
     },
     {
       icon: (
@@ -27,7 +27,7 @@ function RightSidebar() {
         </svg>
       ),
       label: 'WhatsApp',
-      href: 'https://wa.me/919876543210'
+      href: 'https://wa.me/919667666477'
     }
   ];
 

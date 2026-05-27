@@ -112,10 +112,10 @@ function SolarMaintenancePage() {
               without any stress.
             </p>
 
-            <div className="cta-buttons">
+            {/* <div className="cta-buttons">
               <button className="primary-cta">Get Free Check-up</button>
               <button className="secondary-cta">View Plans</button>
-            </div>
+            </div> */}
           </div>
         </section>
 

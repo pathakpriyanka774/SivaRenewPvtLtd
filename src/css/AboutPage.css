@@ -123,7 +123,7 @@
   line-height: 1.55;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .about-banner {
     height: 44vh;
   }
@@ -139,7 +139,56 @@
   }
 }
 
+@media (max-width: 768px) {
+  .about-banner {
+    height: 40vh;
+  }
+
+  .about-banner-content {
+    padding: 0 0 20px;
+  }
+
+  .about-content-section {
+    padding: 40px 15px 60px;
+  }
+
+  .about-intro {
+    padding: 25px 20px;
+  }
+
+  .about-intro h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .about-intro p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about-highlights {
+    gap: 20px;
+  }
+
+  .highlight-item {
+    padding: 20px;
+  }
+
+  .highlight-item h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .highlight-item p {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 640px) {
+  .about-banner {
+    height: 35vh;
+  }
+
   .about-content-section {
     padding: 36px 12px 56px;
   }
@@ -148,7 +197,49 @@
     padding: 22px 18px;
   }
 
+  .about-intro h2 {
+    font-size: 24px;
+  }
+
   .about-intro p {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .highlight-item {
+    padding: 16px;
+  }
+
+  .highlight-item h3 {
+    font-size: 18px;
+  }
+
+  .highlight-item p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-banner {
+    height: 30vh;
+  }
+
+  .about-content-section {
+    padding: 30px 10px 50px;
+  }
+
+  .about-intro {
+    padding: 20px 15px;
+  }
+
+  .about-intro h2 {
+    font-size: 22px;
+  }
+
+  .about-highlights {
+    gap: 16px;
+  }
+
+  .highlight-item {
+    padding: 15px;
   }
 }

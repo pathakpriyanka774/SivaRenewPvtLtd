@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6abcd109.css",
+    "main.js": "/static/js/main.529f2b99.js",
+    "static/media/hero1.jpeg": "/static/media/hero1.28d6750d3b78b5ba98eb.jpeg",
+    "static/media/jaipur.png": "/static/media/jaipur.6e1a829b9af868b53d39.png",
+    "static/media/gujrat.png": "/static/media/gujrat.cf0b25de24993b07fefe.png",
+    "static/media/hero3.png": "/static/media/hero3.65d9e5ce08ea12647b6f.png",
+    "static/media/industrialSolar.png": "/static/media/industrialSolar.d59723a03a1e6b4cba2d.png",
+    "static/media/wind.png": "/static/media/wind.6ed61ba065af81d439b9.png",
+    "static/media/hero4.png": "/static/media/hero4.4dc287f5791f3838c85d.png",
+    "static/media/Residential.png": "/static/media/Residential.516620a0ad74c7549055.png",
+    "static/media/resid.png": "/static/media/resid.e1d96be0e7bcce94a4f9.png",
+    "static/media/gallery1.png": "/static/media/gallery1.a76c70dbbe794d93c52e.png",
+    "static/media/hero2.jpeg": "/static/media/hero2.c13a133004cdc54fd586.jpeg",
+    "static/media/industrialGujrat.png": "/static/media/industrialGujrat.b4e28dc65a0a66f6359e.png",
+    "static/media/solarSaving.png": "/static/media/solarSaving.6fab03886616be51c55f.png",
+    "static/media/comm.jpg": "/static/media/comm.bd6cda8c84ca8281f512.jpg",
+    "static/media/store.webp": "/static/media/store.0a1044b6e57dcf2320c0.webp",
+    "static/media/indus.webp": "/static/media/indus.21a57476679bcb5d4e6d.webp",
+    "static/media/clean.avif": "/static/media/clean.4e1020dc31f993edb420.avif",
+    "static/media/collag1.jpg": "/static/media/collag1.06e941d237f31273c2de.jpg",
+    "static/media/logo.png": "/static/media/logo.73c4be7015ca04929cd6.png",
+    "static/media/gallery2.jpg": "/static/media/gallery2.3ec5467f57fcd2dee69d.jpg",
+    "static/media/epc.webp": "/static/media/epc.2e133800907e33f44a4b.webp",
+    "index.html": "/index.html",
+    "main.6abcd109.css.map": "/static/css/main.6abcd109.css.map",
+    "main.529f2b99.js.map": "/static/js/main.529f2b99.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6abcd109.css",
+    "static/js/main.529f2b99.js"
+  ]
+}

@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 30px 20px;
+  padding: 30px 8px;
   background: linear-gradient(180deg, #ffb347 0%, #ff8c00 55%, #e26b00 100%);
   border-radius: 50px 0 0 50px;
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
@@ -34,14 +34,14 @@
 }
 
 .sidebar-icon {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 45px;
   background: rgba(255, 255, 255, 0.95);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -93,7 +93,7 @@
 .sidebar-icon-wrapper::after {
   content: attr(aria-label);
   position: absolute;
-  right: 70px;
+  right: 65px;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.9);
@@ -110,7 +110,7 @@
 
 .sidebar-icon-wrapper:hover::after {
   opacity: 1;
-  right: 80px;
+  right: 75px;
 }
 
 /* Pulse animation for the first icon */

@@ -25,7 +25,7 @@ function ContactPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const emailTo = "info@shiva-renew.com";
+    const emailTo = "info@sivarenew.com";
     const gmailSubject = formData.subject || "New enquiry from website";
     const gmailBody = [
       `Name: ${formData.name}`,
@@ -216,7 +216,7 @@ function ContactPage() {
           <div className="cta-buttons">
             <a href="tel:+919876543210" className="cta-btn primary">Call Us Now</a>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@shiva-renew.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=info@sivarenew.com"
               className="cta-btn secondary"
               target="_blank"
               rel="noopener noreferrer"

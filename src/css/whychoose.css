@@ -221,13 +221,20 @@
 }
 
 @media (max-width: 1024px) {
+  .whychoose {
+    padding: 60px 20px;
+  }
+  
   .whychoose-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .section-title {
     font-size: 40px;
+    margin-bottom: 50px;
   }
   
   .why-card:nth-child(1) .icon-wrapper {
@@ -260,21 +267,41 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
+  .whychoose {
+    padding: 50px 15px;
+  }
+  
   .whychoose-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
   }
   
   .section-title {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .why-card {
+    padding: 30px 20px;
+  }
+  
+  .why-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .why-card p {
+    font-size: 16px;
+    line-height: 1.6;
   }
   
   .icon-wrapper {
     width: 60px;
     height: 60px;
-    margin: 0 auto 16px auto;
+    margin-bottom: 15px;
   }
   
   .icon {
@@ -285,19 +312,46 @@
     width: 45px;
     height: 45px;
   }
-  
-  .why-card:nth-child(1) .icon-wrapper {
-    width: 80px;
-    height: 80px;
-  margin: 0 auto 16px auto;
+}
+
+@media (max-width: 640px) {
+  .whychoose {
+    padding: 40px 12px;
   }
   
-  .why-card:nth-child(1) .icon {
-    font-size: 36px;
+  .whychoose-grid {
+    gap: 16px;
   }
   
-  .why-card:nth-child(1) .icon-bg {
-    width: 60px;
-    height: 60px;
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .why-card {
+    padding: 25px 16px;
+  }
+  
+  .why-card h3 {
+    font-size: 22px;
+  }
+  
+  .why-card p {
+    font-size: 15px;
+  }
+  
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  
+  .icon-bg {
+    width: 38px;
+    height: 38px;
   }
 }

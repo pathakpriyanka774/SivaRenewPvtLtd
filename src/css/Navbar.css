@@ -43,10 +43,15 @@
 }
 
 .logo-image {
-  height: 84px;
+  height: 140px;
   width: auto;
   display: block;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-image {
+  transform: scale(1.05);
 }
 
 .logo-text {
@@ -580,7 +585,7 @@ mark.nav-search-highlight-active {
   }
 
   .logo-image {
-    height: 42px;
+    height: 60px;
   }
 
   .logo-main {

@@ -88,20 +88,128 @@
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .solar-products-hero {
-    padding: 52px 12px;
+    padding: 56px 15px;
   }
 
   .solar-products-section {
-    padding: 22px 12px;
+    padding: 30px 15px;
+  }
+
+  .solar-products-hero h1 {
+    font-size: clamp(30px, 4vw, 48px);
+  }
+
+  .solar-products-hero p {
+    font-size: clamp(16px, 1.5vw, 22px);
+  }
+}
+
+@media (max-width: 768px) {
+  .solar-products-hero {
+    padding: 48px 12px;
+  }
+
+  .solar-products-section {
+    padding: 24px 12px;
   }
 
   .solar-products-section .solar-products-container {
-    padding: 22px 18px;
+    padding: 20px 15px;
+  }
+
+  .solar-products-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
   }
 
   .solar-products-section p {
     font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .solar-products-section ul {
+    padding-left: 20px;
+  }
+
+  .solar-products-section li {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 640px) {
+  .solar-products-hero {
+    padding: 40px 10px;
+  }
+
+  .solar-products-section {
+    padding: 20px 10px;
+  }
+
+  .solar-products-section .solar-products-container {
+    padding: 16px 12px;
+  }
+
+  .solar-products-hero h1 {
+    font-size: clamp(26px, 5vw, 36px);
+  }
+
+  .solar-products-hero p {
+    font-size: clamp(15px, 1.6vw, 20px);
+  }
+
+  .solar-products-section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .solar-products-section p {
+    font-size: 15px;
+  }
+
+  .solar-products-section ul {
+    padding-left: 16px;
+  }
+
+  .solar-products-section li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .solar-products-hero {
+    padding: 32px 8px;
+  }
+
+  .solar-products-section {
+    padding: 16px 8px;
+  }
+
+  .solar-products-section .solar-products-container {
+    padding: 12px 8px;
+  }
+
+  .solar-products-hero h1 {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  .solar-products-hero p {
+    font-size: clamp(14px, 1.8vw, 18px);
+  }
+
+  .solar-products-section h2 {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+
+  .solar-products-section p {
+    font-size: 14px;
+  }
+
+  .solar-products-section li {
+    font-size: 13px;
   }
 }

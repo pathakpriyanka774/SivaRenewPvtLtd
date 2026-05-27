@@ -126,6 +126,8 @@ function Navbar() {
       }
     } else {
       navigate(path);
+      // Scroll to top when navigating to a new page
+      window.scrollTo(0, 0);
     }
   };
 
@@ -148,6 +150,7 @@ function Navbar() {
     setActiveDropdown(null);
     setSearchOpen(false);
     setSearchQuery("");
+    window.scrollTo(0, 0);
   };
 
   const handleFindOnPage = () => {
@@ -187,6 +190,7 @@ function Navbar() {
                 <span className="dropdown-arrow"></span>
               </button>
               <div className={`dropdown-menu ${activeDropdown === 'company' ? 'show' : ''}`}>
+                <Link to="/" className="dropdown-item" onClick={(e) => handleDropdownClick(e, '/')}>Home</Link>
                 <Link to="/about" className="dropdown-item" onClick={(e) => handleDropdownClick(e, '/about')}>About Us</Link>
                 {/* <Link to="/team" className="dropdown-item" onClick={(e) => handleDropdownClick(e, '/team')}>Our Team</Link> */}
 

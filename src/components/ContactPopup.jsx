@@ -44,7 +44,7 @@ function ContactPopup() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const emailTo = "info@shiva-renew.com";
+    const emailTo = "info@sivarenew.com";
     const gmailSubject = "New callback request from Talk To Our Solar Expert";
     const gmailBody = [
       `Name: ${formData.name}`,

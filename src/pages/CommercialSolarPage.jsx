@@ -91,43 +91,7 @@ function CommercialSolarPage() {
           </div>
         </section>
 
-        <section className="process">
-          <div className="container">
-            <h2>Commercial Installation Process</h2>
-            <div className="steps">
-              <div className="step">
-                <div className="step-number">1</div>
-                <h3>Energy Audit</h3>
-                <p>Comprehensive analysis of current energy consumption and load patterns</p>
-              </div>
-              <div className="step">
-                <div className="step-number">2</div>
-                <h3>System Design</h3>
-                <p>Custom solar system design optimized for your business requirements</p>
-              </div>
-              <div className="step">
-                <div className="step-number">3</div>
-                <h3>Financial Planning</h3>
-                <p>Detailed cost-benefit analysis and financing options</p>
-              </div>
-              <div className="step">
-                <div className="step-number">4</div>
-                <h3>Installation</h3>
-                <p>Professional installation with minimal business disruption</p>
-              </div>
-              <div className="step">
-                <div className="step-number">5</div>
-                <h3>Commissioning</h3>
-                <p>System testing, grid connection, and performance verification</p>
-              </div>
-              <div className="step">
-                <div className="step-number">6</div>
-                <h3>O&M Support</h3>
-                <p>Long-term monitoring, maintenance, and performance optimization</p>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         
 

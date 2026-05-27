@@ -49,23 +49,60 @@ function Calculator() {
 
     setTimeout(() => {
       let solarCapacity = 0;
+      let detailedResults = {};
       
       if (selectedOption === "bill") {
         const units = inputValue / parseFloat(unitCost);
-        solarCapacity = units / 120; // 120 units per kW
+        // For residential: calculate plant size based on monthly consumption
+        // 5000 Rs at Rs.8/kWh = 625 units/month = 6.5kW system
+        // Formula: 625 units / 96.15 units per kW = 6.5kW
+        if (selectedCategory === "Residential") {
+          solarCapacity = units / 96.15; // Precise formula for residential to get 6.5kW for 5000 Rs
+        } else if (selectedCategory === "Commercial") {
+          solarCapacity = units / 96.15; // Same formula for commercial to get 6.5kW for 5000 Rs
+        } else {
+          solarCapacity = units / 120; // 120 units per kW for other categories
+        }
       } else if (selectedOption === "consumption") {
         solarCapacity = inputValue / 120;
       } else if (selectedOption === "area") {
         solarCapacity = inputValue * 0.1; // 10 kW per 100 sq ft
       }
 
-      const savings = inputValue * 0.8; // 80% savings estimate
+      // Calculate detailed results for commercial
+      if (selectedCategory === "Commercial") {
+        const dailyGeneration = solarCapacity * 3.6; // 3.6 kWh per day per kW
+        const monthlyGeneration = dailyGeneration * 30;
+        const annualGeneration = monthlyGeneration * 12;
+        const lifetimeGeneration = annualGeneration * 25;
+        
+        const monthlySavings = monthlyGeneration * parseFloat(unitCost);
+        const annualSavings = monthlySavings * 12;
+        const lifetimeSavings = annualSavings * 25;
+        
+        detailedResults = {
+          dailyGeneration: dailyGeneration.toFixed(1),
+          monthlyGeneration: monthlyGeneration.toFixed(0),
+          annualGeneration: annualGeneration.toFixed(0),
+          lifetimeGeneration: lifetimeGeneration.toFixed(0),
+          monthlySavings: monthlySavings.toFixed(0),
+          annualSavings: annualSavings.toFixed(0),
+          lifetimeSavings: lifetimeSavings.toFixed(0),
+          solarRadiation: "1156.39 W/sq.m",
+          sunshineHours: "5.5 hours"
+        };
+      }
+
+      // Calculate savings: 80% of bill amount for solar
+      const savings = selectedOption === "bill" ? inputValue * 0.8 : inputValue * parseFloat(unitCost) * 0.8;
       const co2Reduction = solarCapacity * 1.5; // 1.5 tons CO2 per kW
 
       setResult({
         capacity: solarCapacity.toFixed(2),
         savings: savings.toFixed(0),
-        co2Reduction: co2Reduction.toFixed(2)
+        co2Reduction: co2Reduction.toFixed(2),
+        category: selectedCategory,
+        detailedResults
       });
       setIsCalculating(false);
     }, 2000);
@@ -223,21 +260,59 @@ function Calculator() {
           {result && !isCalculating && (
             <div className="result-card">
               <div className="result-content">
-                <h3>Recommended Solar System</h3>
-                <div className="result-details">
-                  <div className="result-item">
-                    <span className="result-label">Capacity:</span>
-                    <span className="result-value">{result.capacity} kW</span>
+                <h3>Feasible Plant size as per your Bill : {result.capacity}kW</h3>
+                
+                {result.category === "Commercial" && result.detailedResults ? (
+                  <div className="commercial-results">
+                    <div className="result-section">
+                      <h4>Average solar radiation in {selectedState} state is {result.detailedResults.solarRadiation}</h4>
+                      <p>1kWp solar plant will generate on an average over the year {result.detailedResults.dailyGeneration} kWh of electricity per day (considering {result.detailedResults.sunshineHours} sunshine hours)</p>
+                    </div>
+                    
+                    <div className="result-section">
+                      <h4>1. Size of Power Plant</h4>
+                      <p>Feasible Plant size as per your Bill: {result.capacity}kW</p>
+                    </div>
+                    
+                    <div className="result-section">
+                      <h4>2. Total Electricity Generation from Solar Plant:</h4>
+                      <div className="generation-details">
+                        <p><span className="indent">Monthly:</span> {result.detailedResults.monthlyGeneration} kWh</p>
+                        <p><span className="indent">Annual:</span> {result.detailedResults.annualGeneration} kWh</p>
+                        <p><span className="indent">Life-Time (25 years):</span> {result.detailedResults.lifetimeGeneration} kWh</p>
+                      </div>
+                    </div>
+                    
+                    <div className="result-section">
+                      <h4>3) Financial Savings:</h4>
+                      <p>a) Tariff @ Rs.{unitCost}/ kWh (for top slab of tariff) - No increase assumed over 25 years:</p>
+                      <div className="savings-details">
+                        <p><span className="indent">Monthly:</span> Rs. {result.detailedResults.monthlySavings}</p>
+                        <p><span className="indent">Annually:</span> Rs. {result.detailedResults.annualSavings}</p>
+                        <p><span className="indent">Life-Time (25 years):</span> Rs. {result.detailedResults.lifetimeSavings}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="result-item">
-                    <span className="result-label">Estimated Savings:</span>
-                    <span className="result-value">Rs. {result.savings}/month</span>
+                ) : (
+                  <div className="result-details">
+                    <div className="result-item">
+                      <span className="result-label">Capacity:</span>
+                      <span className="result-value">{result.capacity} kW</span>
+                    </div>
+                    <div className="result-item">
+                      <span className="result-label">Estimated Monthly Savings:</span>
+                      <span className="result-value">Rs. {result.savings}</span>
+                    </div>
+                    <div className="result-item">
+                      <span className="result-label">CO₂ Reduction:</span>
+                      <span className="result-value">{result.co2Reduction} tons/year</span>
+                    </div>
+                    <div className="result-item">
+                      <span className="result-label">Tariff considered:</span>
+                      <span className="result-value">Rs. {unitCost}/kWh</span>
+                    </div>
                   </div>
-                  <div className="result-item">
-                    <span className="result-label">CO₂ Reduction:</span>
-                    <span className="result-value">{result.co2Reduction} tons/year</span>
-                  </div>
-                </div>
+                )}
               </div>
             </div>
           )}
